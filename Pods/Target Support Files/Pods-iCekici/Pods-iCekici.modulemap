@@ -1,0 +1,6 @@
+framework module Pods_iCekici {
+  umbrella header "Pods-iCekici-umbrella.h"
+
+  export *
+  module * { export * }
+}
