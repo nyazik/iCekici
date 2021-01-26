@@ -8,14 +8,21 @@
 import UIKit
 
 class CreatingOrderVC: UIViewController {
-
-
+    
+    @IBOutlet weak var towPhotoGaleryLabel: UIButton!
+    @IBOutlet weak var profileInfoLabel: UIButton!
     @IBOutlet weak var towImageView: UIView!
-
+    @IBOutlet weak var firstView: UIView!
+    @IBOutlet weak var secondView: UIView!
+    
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayouts()
+        profileInfoLabel.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.bold)
+        firstView.alpha = 1
+        secondView.alpha = 0
     }
     
     
@@ -45,5 +52,22 @@ class CreatingOrderVC: UIViewController {
         dismiss(animated: false, completion: nil)
     }
     
+    
+    @IBAction func profileInfoButtonPressed(_ sender: UIButton) {
 
+        profileInfoLabel.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.bold)
+        towPhotoGaleryLabel.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.regular)
+        
+        firstView.alpha = 1
+        secondView.alpha = 0
+    }
+    
+    
+    @IBAction func towPhotoa(_ sender: UIButton) {
+        profileInfoLabel.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.regular)
+        towPhotoGaleryLabel.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.bold)
+        firstView.alpha = 0
+        secondView.alpha = 1
+    }
+    
 }

@@ -44,6 +44,17 @@
 		CD55101025B6D048006D1C14 /* PreviousOrdersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD55100F25B6D048006D1C14 /* PreviousOrdersCell.swift */; };
 		CD799A1C25B55CFD008F1871 /* MyProfileEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD799A1B25B55CFD008F1871 /* MyProfileEditVC.swift */; };
 		CD799A1F25B55E7C008F1871 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD799A1E25B55E7C008F1871 /* MenuVC.swift */; };
+		CD83F67225C0A782006AD5BD /* TowGaleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F67125C0A782006AD5BD /* TowGaleryCell.swift */; };
+		CD83F67925C0A86D006AD5BD /* TowPhotoGaleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F67825C0A86D006AD5BD /* TowPhotoGaleryVC.swift */; };
+		CD83F67C25C0AC99006AD5BD /* ProfileInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F67B25C0AC99006AD5BD /* ProfileInformationVC.swift */; };
+		CD83F67F25C0CA37006AD5BD /* LocationViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F67E25C0CA37006AD5BD /* LocationViewVC.swift */; };
+		CD83F68225C0CBDC006AD5BD /* ProfilePhotoGaleryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F68125C0CBDC006AD5BD /* ProfilePhotoGaleryVC.swift */; };
+		CD83F68525C0CC9B006AD5BD /* TowProfileGaleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F68425C0CC9B006AD5BD /* TowProfileGaleryCell.swift */; };
+		CD83F68825C0D08E006AD5BD /* TowProfileInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F68725C0D08E006AD5BD /* TowProfileInfoVC.swift */; };
+		CD83F68C25C0D58E006AD5BD /* EnlargedPhotoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD83F68A25C0D58E006AD5BD /* EnlargedPhotoVC.xib */; };
+		CD83F68D25C0D58E006AD5BD /* EnlargedPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F68B25C0D58E006AD5BD /* EnlargedPhotoVC.swift */; };
+		CD83F69125C0D945006AD5BD /* DeleteTowVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD83F68F25C0D945006AD5BD /* DeleteTowVC.xib */; };
+		CD83F69225C0D945006AD5BD /* DeleteTowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD83F69025C0D945006AD5BD /* DeleteTowVC.swift */; };
 		CD905A1825B07434004827A1 /* ProfileDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD905A1725B07434004827A1 /* ProfileDetailCell.swift */; };
 		CDA5330225BEA9160039C29A /* AddMultiplePhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5330125BEA9160039C29A /* AddMultiplePhotoVC.swift */; };
 		CDA5330525BEC9400039C29A /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA5330425BEC9400039C29A /* CategoriesCell.swift */; };
@@ -127,6 +138,17 @@
 		CD55100F25B6D048006D1C14 /* PreviousOrdersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviousOrdersCell.swift; sourceTree = "<group>"; };
 		CD799A1B25B55CFD008F1871 /* MyProfileEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileEditVC.swift; sourceTree = "<group>"; };
 		CD799A1E25B55E7C008F1871 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		CD83F67125C0A782006AD5BD /* TowGaleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowGaleryCell.swift; sourceTree = "<group>"; };
+		CD83F67825C0A86D006AD5BD /* TowPhotoGaleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowPhotoGaleryVC.swift; sourceTree = "<group>"; };
+		CD83F67B25C0AC99006AD5BD /* ProfileInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInformationVC.swift; sourceTree = "<group>"; };
+		CD83F67E25C0CA37006AD5BD /* LocationViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewVC.swift; sourceTree = "<group>"; };
+		CD83F68125C0CBDC006AD5BD /* ProfilePhotoGaleryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhotoGaleryVC.swift; sourceTree = "<group>"; };
+		CD83F68425C0CC9B006AD5BD /* TowProfileGaleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowProfileGaleryCell.swift; sourceTree = "<group>"; };
+		CD83F68725C0D08E006AD5BD /* TowProfileInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TowProfileInfoVC.swift; sourceTree = "<group>"; };
+		CD83F68A25C0D58E006AD5BD /* EnlargedPhotoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EnlargedPhotoVC.xib; sourceTree = "<group>"; };
+		CD83F68B25C0D58E006AD5BD /* EnlargedPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnlargedPhotoVC.swift; sourceTree = "<group>"; };
+		CD83F68F25C0D945006AD5BD /* DeleteTowVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteTowVC.xib; sourceTree = "<group>"; };
+		CD83F69025C0D945006AD5BD /* DeleteTowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteTowVC.swift; sourceTree = "<group>"; };
 		CD905A1725B07434004827A1 /* ProfileDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailCell.swift; sourceTree = "<group>"; };
 		CDA5330125BEA9160039C29A /* AddMultiplePhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMultiplePhotoVC.swift; sourceTree = "<group>"; };
 		CDA5330425BEC9400039C29A /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
@@ -366,6 +388,15 @@
 				CDBC80DD25BDDBEC00A2E37F /* PreviousOrderDetailVC.swift */,
 				CDDC298A25BE1560006C8FF1 /* MainPageVC.swift */,
 				CD42447B25BF6555000E8799 /* TowProfileVC.swift */,
+				CD83F67825C0A86D006AD5BD /* TowPhotoGaleryVC.swift */,
+				CD83F67B25C0AC99006AD5BD /* ProfileInformationVC.swift */,
+				CD83F67E25C0CA37006AD5BD /* LocationViewVC.swift */,
+				CD83F68125C0CBDC006AD5BD /* ProfilePhotoGaleryVC.swift */,
+				CD83F68725C0D08E006AD5BD /* TowProfileInfoVC.swift */,
+				CD83F68A25C0D58E006AD5BD /* EnlargedPhotoVC.xib */,
+				CD83F68B25C0D58E006AD5BD /* EnlargedPhotoVC.swift */,
+				CD83F68F25C0D945006AD5BD /* DeleteTowVC.xib */,
+				CD83F69025C0D945006AD5BD /* DeleteTowVC.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -417,6 +448,8 @@
 				CD5121BC25B8154A004DBFCE /* UserProfileCell.swift */,
 				CDF5403825BAEF7200C8E440 /* BrandsCell.swift */,
 				CDA5330425BEC9400039C29A /* CategoriesCell.swift */,
+				CD83F67125C0A782006AD5BD /* TowGaleryCell.swift */,
+				CD83F68425C0CC9B006AD5BD /* TowProfileGaleryCell.swift */,
 			);
 			path = "CollectionView Cells";
 			sourceTree = "<group>";
@@ -481,6 +514,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDC0721A25B82FAE008EC414 /* GOTHIC.TTF in Resources */,
+				CD83F68C25C0D58E006AD5BD /* EnlargedPhotoVC.xib in Resources */,
+				CD83F69125C0D945006AD5BD /* DeleteTowVC.xib in Resources */,
 				CD38F4FB25B0710A00D5B1A2 /* LaunchScreen.storyboard in Resources */,
 				CDD635F425C040BA0057F44D /* AssignOrderPopupVC.xib in Resources */,
 				CD5121A925B7DACE004DBFCE /* CenturyGothicRegular.ttf in Resources */,
@@ -544,16 +579,20 @@
 				CDBC80D025BDB15F00A2E37F /* OrderCell.swift in Sources */,
 				CDD635F525C040BA0057F44D /* AssignOrderPopupVC.swift in Sources */,
 				CD55101025B6D048006D1C14 /* PreviousOrdersCell.swift in Sources */,
+				CD83F68825C0D08E006AD5BD /* TowProfileInfoVC.swift in Sources */,
 				CDBC80D525BDC4F000A2E37F /* MyAddressedCell.swift in Sources */,
 				CDEFFDC025B1972E0045C3D7 /* IncomingOrderVC.swift in Sources */,
 				CDBC80C525BC668000A2E37F /* CampaignsCell.swift in Sources */,
 				CDF5403925BAEF7200C8E440 /* BrandsCell.swift in Sources */,
 				CDA5D43725B08803002C5060 /* UIButton+Ext.swift in Sources */,
 				CDA5D44825B08DF0002C5060 /* LoginVC.swift in Sources */,
+				CD83F69225C0D945006AD5BD /* DeleteTowVC.swift in Sources */,
+				CD83F68D25C0D58E006AD5BD /* EnlargedPhotoVC.swift in Sources */,
 				CD2F1F9825B4542B006AE1E8 /* MyWalletStatisticsVC.swift in Sources */,
 				CDF5403625BAE78000C8E440 /* DetailPageVC.swift in Sources */,
 				CDA5D43C25B08803002C5060 /* UIView+Ext.swift in Sources */,
 				CDEFFDB725B176C60045C3D7 /* HomePageVC.swift in Sources */,
+				CD83F67F25C0CA37006AD5BD /* LocationViewVC.swift in Sources */,
 				CD51219125B7BA32004DBFCE /* AssignedTowCell.swift in Sources */,
 				CD799A1C25B55CFD008F1871 /* MyProfileEditVC.swift in Sources */,
 				CD2F1FA225B48969006AE1E8 /* NotificationVC.swift in Sources */,
@@ -571,6 +610,7 @@
 				CDF5404325BAF6B200C8E440 /* InviteFriendsVC.swift in Sources */,
 				CDBC80C225BC662C00A2E37F /* CampaignListingVC.swift in Sources */,
 				CDBC80D825BDCC1E00A2E37F /* ChooseFromMapVC.swift in Sources */,
+				CD83F67925C0A86D006AD5BD /* TowPhotoGaleryVC.swift in Sources */,
 				CD51218B25B7A9DB004DBFCE /* MyAddressesVC.swift in Sources */,
 				CD2F1FA825B4918D006AE1E8 /* AssignOrdersToTowCell.swift in Sources */,
 				CD5121BA25B814CB004DBFCE /* UserProfileVC.swift in Sources */,
@@ -581,6 +621,7 @@
 				CD2D5F9F25BA8B270011C5D3 /* AssignedDetailVC.swift in Sources */,
 				CDA5D43A25B08803002C5060 /* Date+Ext.swift in Sources */,
 				CD42448725C00386000E8799 /* AnnouncementsVC.swift in Sources */,
+				CD83F68525C0CC9B006AD5BD /* TowProfileGaleryCell.swift in Sources */,
 				CD2D5FAA25BAB1450011C5D3 /* AboutPageViewController.swift in Sources */,
 				CD42448B25C00472000E8799 /* AnnouncementsCell.swift in Sources */,
 				CDA5D43E25B08803002C5060 /* String+Ext.swift in Sources */,
@@ -588,9 +629,11 @@
 				CDA5539B25B592CE00AAEAD7 /* SearchTowVC.swift in Sources */,
 				CDEC1BD225B2BF45000EEF88 /* CreatingOrderVC.swift in Sources */,
 				CDA5D43825B08803002C5060 /* UITableView+Ext.swift in Sources */,
+				CD83F68225C0CBDC006AD5BD /* ProfilePhotoGaleryVC.swift in Sources */,
 				CD2D5F9A25BA5FF70011C5D3 /* ProfileCell.swift in Sources */,
 				CDDC298B25BE1561006C8FF1 /* MainPageVC.swift in Sources */,
 				CD2D5F9725BA5F120011C5D3 /* ProfileViewController.swift in Sources */,
+				CD83F67C25C0AC99006AD5BD /* ProfileInformationVC.swift in Sources */,
 				CD51218E25B7B842004DBFCE /* AssignedTowsVC.swift in Sources */,
 				CDA5D43B25B08803002C5060 /* TextField+Ext.swift in Sources */,
 				CD905A1825B07434004827A1 /* ProfileDetailCell.swift in Sources */,
@@ -599,6 +642,7 @@
 				CD51219725B7C0E3004DBFCE /* SetLocationDestinationVC.swift in Sources */,
 				CDBC80DE25BDDBED00A2E37F /* PreviousOrderDetailVC.swift in Sources */,
 				CDF5403325BAE52D00C8E440 /* CampaignsVC.swift in Sources */,
+				CD83F67225C0A782006AD5BD /* TowGaleryCell.swift in Sources */,
 				CD2D5F9425BA2C440011C5D3 /* AllMyTowsCell.swift in Sources */,
 				CD2F1F9F25B4734C006AE1E8 /* PurchasesCell.swift in Sources */,
 				CDA5D45A25B0B6E3002C5060 /* SignUpVC.swift in Sources */,
