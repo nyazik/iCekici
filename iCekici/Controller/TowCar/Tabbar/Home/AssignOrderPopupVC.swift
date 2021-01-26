@@ -47,9 +47,12 @@ class AssignOrderPopupVC: UIViewController {
         configureShadow(view: roundView)
         configureRoundView(view: assignView)
         configureRoundView(view: towsListingDropDown)
-        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
-        backgroundView.addGestureRecognizer(tap)
         
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        let tapSecond = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(_:)))
+        assignView.addGestureRecognizer(tap)
+        backgroundView.addGestureRecognizer(tapSecond)
+
     }
     
     @objc func handleTap(_ sender: UITapGestureRecognizer? = nil) {
@@ -72,7 +75,7 @@ class AssignOrderPopupVC: UIViewController {
     
     func configureBorderView(view: UIView){
         view.layer.cornerRadius = 15
-        view.layer.borderColor = UIColor.black.cgColor
+        view.layer.borderColor = UIColor.gray.cgColor
         view.layer.borderWidth = 1
 //        view.backgroundColor = UIColor.white
         view.layer.cornerRadius = 15
@@ -82,8 +85,6 @@ class AssignOrderPopupVC: UIViewController {
         view.layer.cornerRadius = view.frame.size.height / 2
     }
     
-    @IBAction func assignButtonPressed(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
-    }
+  
     
 }
