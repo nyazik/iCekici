@@ -23,10 +23,17 @@ class DetailPageVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayouts()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
+        assignView.addGestureRecognizer(tap)
+
         
     }
     
-    
+    @objc func touchTapped(_ sender: UITapGestureRecognizer) {
+        let vc = AssignOrderPopupVC(nibName: "AssignOrderPopupVC", bundle: nil)
+        vc.modalPresentationStyle = .overCurrentContext
+        self.present(vc, animated: false, completion: nil)
+    }
     
     func setupLayouts(){
         //configureTabbarView(view: tabbarView)
@@ -85,7 +92,7 @@ class DetailPageVC: UIViewController {
     
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
         
         
     }

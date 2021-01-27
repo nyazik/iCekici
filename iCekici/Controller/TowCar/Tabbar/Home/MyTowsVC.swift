@@ -21,7 +21,20 @@ class MyTowsVC: UIViewController {
         towAddingTableView.delegate = self
         towAddingTableView.dataSource = self
         setupLayouts()
+        
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
+        addTowView.addGestureRecognizer(tap)
+
+        
     }
+    
+    @objc func touchTapped(_ sender: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "AddTowVC") as! AddTowVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    }
+    
     
     func setupLayouts(){
         configureView(view: addTowView)
@@ -51,9 +64,10 @@ class MyTowsVC: UIViewController {
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "HomePageVC") as! HomePageVC
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: false, completion: nil)
+//        let vc = self.storyboard?.instantiateViewController(identifier: "HomePageVC") as! HomePageVC
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func addTowButtonPressed(_ sender: UIButton) {
@@ -71,8 +85,16 @@ extension MyTowsVC : UITableViewDataSource, UITableViewDelegate{
         return 10
     }
     
+    @objc func seeLocation(_ sender: UITapGestureRecognizer){
+        let vc = self.storyboard?.instantiateViewController(identifier: "ChooseFromMapVC") as! ChooseFromMapVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! AllMyTowsCell
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.seeLocation(_:)))
+            cell.seeLocationView.addGestureRecognizer(tapGesture)
         cell.configureView()
         cell.configureRoundView()
         cell.configureViewShadow()
@@ -80,6 +102,12 @@ extension MyTowsVC : UITableViewDataSource, UITableViewDelegate{
         cell.configureBorderView()
         cell.configureCellShadow()
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "TowProfileVC") as! TowProfileVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
     }
     
     

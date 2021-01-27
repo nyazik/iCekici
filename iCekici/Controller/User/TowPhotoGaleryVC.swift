@@ -14,6 +14,8 @@ class TowPhotoGaleryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        self.view.backgroundColor = .red
         towPhotoGaleryCollectionView.dataSource = self
         towPhotoGaleryCollectionView.delegate = self
     }

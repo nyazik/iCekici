@@ -22,8 +22,10 @@ class MainPageVC: UIViewController {
     }
     
     func configureTabbarView(view: UIView){
-        view.addShadow(color: .lightGray, opacity: 1.0)
-        view.layer.cornerRadius = view.frame.size.height / 2
+        view.addShadow(color: .lightGray, opacity: 0.5)
+
+//        view.addShadow(color: .lightGray, opacity: 1.0)
+//        view.layer.cornerRadius = view.frame.size.height / 2
     }
 
     

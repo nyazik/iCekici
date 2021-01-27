@@ -25,6 +25,17 @@ class ProfileInformationVC: UIViewController {
         super.viewDidLoad()
 
         setupLayouts()
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
+        let secondTap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
+        destinationLocationRondView.addGestureRecognizer(tap)
+        roundView.addGestureRecognizer(secondTap)
+        
+    }
+    
+    @objc func touchTapped(_ sender: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "ChooseFromMapVC") as! ChooseFromMapVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
     }
     
   

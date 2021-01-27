@@ -23,11 +23,6 @@ class IncomingOrderVC: UIViewController {
         
     }
     
-    
-  
-    
-    
-    
     func setupLayouts(){
         configureShadow(view: navigationView)
     }
@@ -45,7 +40,7 @@ class IncomingOrderVC: UIViewController {
 //        let vc = self.storyboard?.instantiateViewController(identifier: "HomePageVC") as! HomePageVC
 //        vc.modalPresentationStyle = .fullScreen
 //        self.present(vc, animated: false, completion: nil)
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
         
     }
     
@@ -57,15 +52,17 @@ extension IncomingOrderVC: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-    @objc func abc(_ sender: UITapGestureRecognizer){
+    
+    @objc func assignPopUp(_ sender: UITapGestureRecognizer){
         let vc = AssignOrderPopupVC(nibName: "AssignOrderPopupVC", bundle: nil)
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: false, completion: nil)
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TowListingCell
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.abc(_:)))
-            cell.assignView.addGestureRecognizer(tapGesture)
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.assignPopUp(_:)))
+        cell.assignView.addGestureRecognizer(tapGesture)
         
         cell.configureView()
         cell.configureBorderLocationView()
@@ -87,5 +84,7 @@ extension IncomingOrderVC: UITableViewDataSource, UITableViewDelegate{
         self.present(vc, animated: false, completion: nil)
 
     }
+    
+   
     
 }

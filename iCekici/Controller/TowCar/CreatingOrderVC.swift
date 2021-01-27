@@ -15,8 +15,6 @@ class CreatingOrderVC: UIViewController {
     @IBOutlet weak var firstView: UIView!
     @IBOutlet weak var secondView: UIView!
     
-  
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayouts()
@@ -42,14 +40,11 @@ class CreatingOrderVC: UIViewController {
     func configureView(view: UIView){
         view.layer.cornerRadius = 15
     }
-    
-    @IBAction func goToProfileDetailButtonPressed(_ sender: UIButton) {
 
-    }
     
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     
@@ -63,11 +58,13 @@ class CreatingOrderVC: UIViewController {
     }
     
     
+    
     @IBAction func towPhotoa(_ sender: UIButton) {
         profileInfoLabel.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.regular)
         towPhotoGaleryLabel.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.bold)
         firstView.alpha = 0
         secondView.alpha = 1
+
     }
     
 }

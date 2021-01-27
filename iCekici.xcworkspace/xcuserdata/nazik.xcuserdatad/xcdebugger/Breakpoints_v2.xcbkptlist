@@ -126,9 +126,118 @@
             filePath = "iCekici/Controller/User/ProfileInformationVC.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "configureView(view:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AF9053B1-E29A-4220-B2A3-C018A0A2B13E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iCekici/Controller/User/TowPhotoGaleryVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "AF9053B1-E29A-4220-B2A3-C018A0A2B13E - f64eea414aa62780"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iCekici.TowPhotoGaleryVC.__deallocating_deinit"
+                  moduleName = "iCekici"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/iCekici/iCekici/Controller/User/TowPhotoGaleryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "AF9053B1-E29A-4220-B2A3-C018A0A2B13E - 98182535f6bf7d30"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iCekici.TowPhotoGaleryVC.__allocating_init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iCekici.TowPhotoGaleryVC"
+                  moduleName = "iCekici"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/iCekici/iCekici/Controller/User/TowPhotoGaleryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "AF9053B1-E29A-4220-B2A3-C018A0A2B13E - dbaedf5679284294"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iCekici.TowPhotoGaleryVC.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; iCekici.TowPhotoGaleryVC"
+                  moduleName = "iCekici"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/iCekici/iCekici/Controller/User/TowPhotoGaleryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "146">
+               </Location>
+               <Location
+                  uuid = "AF9053B1-E29A-4220-B2A3-C018A0A2B13E - bf53e7a302dd0275"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iCekici.TowPhotoGaleryVC.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iCekici.TowPhotoGaleryVC&gt;"
+                  moduleName = "iCekici"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/iCekici/iCekici/Controller/User/TowPhotoGaleryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "AF9053B1-E29A-4220-B2A3-C018A0A2B13E - c6eb6e5674526250"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iCekici.TowPhotoGaleryVC.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;iCekici.TowPhotoGaleryVC&gt;"
+                  moduleName = "iCekici"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/nazik/Desktop/ios%20projects/iCekici/iCekici/Controller/User/TowPhotoGaleryVC.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "102">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24B2DA1E-EE5B-4A1C-BFC9-310F5817F1EC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iCekici/Controller/User/TowProfileVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "seeLocation(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

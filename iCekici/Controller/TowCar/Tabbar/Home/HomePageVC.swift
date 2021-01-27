@@ -42,7 +42,7 @@ class HomePageVC: UIViewController {
     
     func configureTabbarView(view: UIView){
 //        view.addShadowWithCorner(shadowColor: .black, offSet: CGSize(width: 2.6, height: 2.6), opacity: 0.8, shadowRadius: 5.0, cornerRadius: 20.0, corners: [.topRight, .topLeft], fillColor: .clear)
-        view.roundCorners(corners: [.topLeft, .topRight], radius: view.frame.size.height / 2)
+//        view.roundCorners(corners: [.topLeft, .topRight], radius: view.frame.size.height / 2)
 //        view.addShadow(shadowColor: .black, offSet: CGSize(width: 2.6, height: 2.6), opacity: 0.8, shadowRadius: 5.0, cornerRadius: 20.0, corners: [.topRight, .topLeft], fillColor: .red)
 
         view.addShadow(color: .lightGray, opacity: 0.5)

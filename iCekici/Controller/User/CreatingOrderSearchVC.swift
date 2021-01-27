@@ -52,7 +52,7 @@ class CreatingOrderSearchVC: UIViewController {
     
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func filteringButtonPressed(_ sender: UIButton) {
@@ -79,7 +79,7 @@ extension CreatingOrderSearchVC: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "TowProfileVC") as! TowProfileVC
+        let vc = self.storyboard?.instantiateViewController(identifier: "CreatingOrderVC") as! CreatingOrderVC
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }

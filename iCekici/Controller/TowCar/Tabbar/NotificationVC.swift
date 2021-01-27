@@ -40,9 +40,10 @@ class NotificationVC: UIViewController {
     }
 
     func configureTabbarView(view: UIView) {
-        
-        view.addShadow(color: .lightGray, opacity: 1.0)
-        view.layer.cornerRadius = view.frame.height / 2
+        view.addShadow(color: .lightGray, opacity: 0.5)
+
+//        view.addShadow(color: .lightGray, opacity: 1.0)
+//        view.layer.cornerRadius = view.frame.height / 2
     }
 
     

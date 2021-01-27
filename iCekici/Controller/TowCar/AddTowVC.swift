@@ -30,6 +30,16 @@ class AddTowVC: UIViewController {
         setupLayouts()
         hideKeyboardWhenTappedAround()
         towDescriptionTextView.delegate = self
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.touchTapped(_:)))
+        addPhotoView.addGestureRecognizer(tap)
+
+        
+    }
+    
+    @objc func touchTapped(_ sender: UITapGestureRecognizer) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "AddMultiplePhotoVC") as! AddMultiplePhotoVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -84,7 +94,7 @@ class AddTowVC: UIViewController {
     }
     
     @IBAction func backButtonPresssed(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
     

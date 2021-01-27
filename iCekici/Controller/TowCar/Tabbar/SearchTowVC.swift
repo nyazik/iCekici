@@ -48,8 +48,10 @@ class SearchTowVC: UIViewController {
     }
 
     func configureTabbarView(view: UIView){
-        view.addShadow(color: .lightGray, opacity: 1.0)
-        view.layer.cornerRadius = view.frame.height / 2
+        view.addShadow(color: .lightGray, opacity: 0.5)
+
+//        view.addShadow(color: .lightGray, opacity: 1.0)
+//        view.layer.cornerRadius = view.frame.height / 2
     }
     
     @IBAction func homeButtonPressed(_ sender: UIButton) {
@@ -120,8 +122,19 @@ extension SearchTowVC: UITableViewDataSource, UITableViewDelegate{
         return 10
     }
     
+    
+    @objc func seeLocation(_ sender: UITapGestureRecognizer){
+        let vc = self.storyboard?.instantiateViewController(identifier: "ChooseFromMapVC") as! ChooseFromMapVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    }
+    
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! SearchTowCell
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.seeLocation(_:)))
+            cell.seeLocationView.addGestureRecognizer(tapGesture)
         cell.configureView()
         cell.configureBorderView()
         cell.configureCellShadow()
