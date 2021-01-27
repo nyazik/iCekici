@@ -70,18 +70,25 @@ extension CreatingOrderSearchVC: UITableViewDataSource, UITableViewDelegate{
         return 10
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! OrderCell
-        cell.configureView()
-        cell.configureCellShadow()
-        cell.configureButton()
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    @objc func assignPopUp(_ sender: UITapGestureRecognizer){
         let vc = self.storyboard?.instantiateViewController(identifier: "CreatingOrderVC") as! CreatingOrderVC
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! OrderCell
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector (self.assignPopUp(_:)))
+        cell.createOrderView.addGestureRecognizer(tapGesture)
+        cell.configureView()
+        cell.configureCellShadow()
+        return cell
+    }
+    
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        let vc = self.storyboard?.instantiateViewController(identifier: "CreatingOrderVC") as! CreatingOrderVC
+//        vc.modalPresentationStyle = .fullScreen
+//        self.present(vc, animated: false, completion: nil)
+//    }
+//
 }

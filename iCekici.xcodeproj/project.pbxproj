@@ -282,6 +282,39 @@
 			path = Tabbar;
 			sourceTree = "<group>";
 		};
+		CD612C2B25C16CFB00B57EC0 /* IncomingOrders */ = {
+			isa = PBXGroup;
+			children = (
+				CDEFFDBF25B1972E0045C3D7 /* IncomingOrderVC.swift */,
+				CDF5403525BAE78000C8E440 /* DetailPageVC.swift */,
+				CDD635F325C040BA0057F44D /* AssignOrderPopupVC.swift */,
+				CDD635F225C040BA0057F44D /* AssignOrderPopupVC.xib */,
+			);
+			path = IncomingOrders;
+			sourceTree = "<group>";
+		};
+		CD612C2C25C16D5A00B57EC0 /* AssignedTows */ = {
+			isa = PBXGroup;
+			children = (
+				CD51218D25B7B842004DBFCE /* AssignedTowsVC.swift */,
+				CD2D5F9E25BA8B270011C5D3 /* AssignedDetailVC.swift */,
+			);
+			path = AssignedTows;
+			sourceTree = "<group>";
+		};
+		CD612C2E25C16D8700B57EC0 /* MyTows */ = {
+			isa = PBXGroup;
+			children = (
+				CD2F1F9125B425F1006AE1E8 /* MyTowsVC.swift */,
+				CD42447B25BF6555000E8799 /* TowProfileVC.swift */,
+				CD83F68725C0D08E006AD5BD /* TowProfileInfoVC.swift */,
+				CD83F67E25C0CA37006AD5BD /* LocationViewVC.swift */,
+				CD83F68125C0CBDC006AD5BD /* ProfilePhotoGaleryVC.swift */,
+				CDA5539725B57AFD00AAEAD7 /* AddTowVC.swift */,
+			);
+			path = MyTows;
+			sourceTree = "<group>";
+		};
 		CD8F88DE25BA1269008CBED4 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -377,6 +410,7 @@
 		CDA5D44225B08B29002C5060 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				CDEC1BD125B2BF45000EEF88 /* CreatingOrderVC.swift */,
 				CD5121B925B814CB004DBFCE /* UserProfileVC.swift */,
 				CD38F4F225B0710600D5B1A2 /* EditProfileVC.swift */,
 				CD55100C25B6CE34006D1C14 /* PreviousOrdersVC.swift */,
@@ -387,12 +421,8 @@
 				CD51219625B7C0E3004DBFCE /* SetLocationDestinationVC.swift */,
 				CDBC80DD25BDDBEC00A2E37F /* PreviousOrderDetailVC.swift */,
 				CDDC298A25BE1560006C8FF1 /* MainPageVC.swift */,
-				CD42447B25BF6555000E8799 /* TowProfileVC.swift */,
 				CD83F67825C0A86D006AD5BD /* TowPhotoGaleryVC.swift */,
 				CD83F67B25C0AC99006AD5BD /* ProfileInformationVC.swift */,
-				CD83F67E25C0CA37006AD5BD /* LocationViewVC.swift */,
-				CD83F68125C0CBDC006AD5BD /* ProfilePhotoGaleryVC.swift */,
-				CD83F68725C0D08E006AD5BD /* TowProfileInfoVC.swift */,
 				CD83F68A25C0D58E006AD5BD /* EnlargedPhotoVC.xib */,
 				CD83F68B25C0D58E006AD5BD /* EnlargedPhotoVC.swift */,
 				CD83F68F25C0D945006AD5BD /* DeleteTowVC.xib */,
@@ -406,11 +436,7 @@
 			children = (
 				CD8F88DE25BA1269008CBED4 /* Menu */,
 				CD55101325B6DCE4006D1C14 /* Tabbar */,
-				CDEC1BD125B2BF45000EEF88 /* CreatingOrderVC.swift */,
-				CDA5539725B57AFD00AAEAD7 /* AddTowVC.swift */,
-				CD2D5F9E25BA8B270011C5D3 /* AssignedDetailVC.swift */,
 				CDF5403225BAE52C00C8E440 /* CampaignsVC.swift */,
-				CDF5403525BAE78000C8E440 /* DetailPageVC.swift */,
 				CDF5403F25BAEFFF00C8E440 /* BrandsVC.swift */,
 				CDA5330125BEA9160039C29A /* AddMultiplePhotoVC.swift */,
 			);
@@ -431,12 +457,10 @@
 			isa = PBXGroup;
 			children = (
 				CDEFFDB625B176C60045C3D7 /* HomePageVC.swift */,
-				CD2F1F9125B425F1006AE1E8 /* MyTowsVC.swift */,
+				CD612C2E25C16D8700B57EC0 /* MyTows */,
 				CDFBB13B25B4177B0015D553 /* CanceledOrderListVC.swift */,
-				CDEFFDBF25B1972E0045C3D7 /* IncomingOrderVC.swift */,
-				CD51218D25B7B842004DBFCE /* AssignedTowsVC.swift */,
-				CDD635F225C040BA0057F44D /* AssignOrderPopupVC.xib */,
-				CDD635F325C040BA0057F44D /* AssignOrderPopupVC.swift */,
+				CD612C2B25C16CFB00B57EC0 /* IncomingOrders */,
+				CD612C2C25C16D5A00B57EC0 /* AssignedTows */,
 			);
 			path = Home;
 			sourceTree = "<group>";

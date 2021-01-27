@@ -10,11 +10,12 @@ import UIKit
 class OrderCell: UITableViewCell {
 
     @IBOutlet weak var cellView: UIView!
-    @IBOutlet weak var createOrderButton: UIButton!
+    @IBOutlet weak var createOrderView: UIView!
     
 
     func configureView(){
         cellView.layer.cornerRadius = 15
+        createOrderView.layer.cornerRadius = 15
     }
     
     func configureCellShadow(){
@@ -24,9 +25,6 @@ class OrderCell: UITableViewCell {
         cellView.layer.shadowOffset = CGSize.zero
         cellView.layer.shadowRadius = 3
     }
-    func configureButton(){
-        createOrderButton.layer.cornerRadius = 15
-
-    }
+    
     
 }

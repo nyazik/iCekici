@@ -77,7 +77,7 @@ class MyWalletStatisticsVC: UIViewController {
 //        vc.modalPresentationStyle = .fullScreen
 //        self.present(vc, animated: false, completion: nil)
         
-        self.dismiss(animated: false, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     

@@ -35,7 +35,7 @@ class CampaignsVC: UIViewController {
     }
 
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: false, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
     
 

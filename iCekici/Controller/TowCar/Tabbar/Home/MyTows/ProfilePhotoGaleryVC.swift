@@ -9,6 +9,7 @@ import UIKit
 
 class ProfilePhotoGaleryVC: UIViewController {
     
+    @IBOutlet weak var tabView: UIView!
     @IBOutlet weak var addPhotoButton: UIButton!
     @IBOutlet weak var towPhotoCollectionView: UICollectionView!
     
@@ -18,6 +19,7 @@ class ProfilePhotoGaleryVC: UIViewController {
         towPhotoCollectionView.dataSource = self
         towPhotoCollectionView.delegate = self
         setupLayouts()
+        configuretabbarShadow(view: tabView)
     }
     
     func setupLayouts(){
@@ -27,8 +29,24 @@ class ProfilePhotoGaleryVC: UIViewController {
     func configureView(view: UIView){
         view.layer.cornerRadius = 10
     }
-
+    
+    func configuretabbarShadow(view: UIView){
+        view.backgroundColor = UIColor.white
+        view.layer.shadowColor = UIColor.lightGray.cgColor
+        view.layer.shadowOpacity = 0.5
+        view.layer.shadowOffset = CGSize.zero
+        view.layer.shadowRadius = 5
+    }
+    
+    @IBAction func addPhoroButtonPressed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "AddMultiplePhotoVC") as! AddMultiplePhotoVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    
+    }
+    
 }
+
 extension ProfilePhotoGaleryVC: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 10
