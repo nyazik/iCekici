@@ -61,6 +61,13 @@ class UserProfileVC: UIViewController {
         self.present(vc, animated: false, completion: nil)
     }
     
+    @IBAction func createNewOrderTabbarButtonPressed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "CreatingOrderVC") as! CreatingOrderVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    }
+    
+    
 }
 
 

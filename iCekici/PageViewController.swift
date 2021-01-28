@@ -2,7 +2,7 @@
 //  PageViewController.swift
 //  iCekici
 //
-//  Created by Nazik on 21.01.2021.
+//  Created by Wookweb Creative Agency on 21.01.2021.
 //
 
 import UIKit

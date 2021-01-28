@@ -2,13 +2,14 @@
 //  ProfileInformationVC.swift
 //  iCekici
 //
-//  Created by Nazik on 26.01.2021.
+//  Created by Wookweb Creative Agency on 26.01.2021.
 //
 
 import UIKit
 import iOSDropDown
 class ProfileInformationVC: UIViewController {
 
+    @IBOutlet weak var makeOrderView: UIView!
     @IBOutlet weak var towNameView: UIView!
     @IBOutlet weak var towPlaqueView: UIView!
     @IBOutlet weak var towBrandView: UIView!
@@ -57,6 +58,7 @@ class ProfileInformationVC: UIViewController {
         destinationLocationDropDown.setLeftPaddingPoints(10)
         configureCornerRadius(view: startLocationDropDown)
         configureCornerRadius(view: destinationLocationDropDown)
+        configureRadius(view: makeOrderView)
     }
     
     func configureRoundView(view : UIView){
@@ -65,6 +67,10 @@ class ProfileInformationVC: UIViewController {
     
     func configureCornerRadius(view : UIView){
         view.layer.cornerRadius = 10
+    }
+    
+    func configureRadius(view : UIView){
+        view.layer.cornerRadius = 15
     }
     
     func configureView(view: UIView){

@@ -2,7 +2,7 @@
 //  MainPageVC.swift
 //  iCekici
 //
-//  Created by Nazik on 24.01.2021.
+//  Created by Wookweb Creative Agency on 24.01.2021.
 //
 
 import UIKit
@@ -49,7 +49,7 @@ class MainPageVC: UIViewController {
     }
     
     @IBAction func profileButtonPressed(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(identifier: "EditProfileVC") as! EditProfileVC
+        let vc = self.storyboard?.instantiateViewController(identifier: "UserProfileVC") as! UserProfileVC
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
         
@@ -69,5 +69,15 @@ class MainPageVC: UIViewController {
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: false, completion: nil)
     }
+    
+    
+    @IBAction func createNewOrderTabbarButtonPressed(_ sender: UIButton) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "CreatingOrderVC") as! CreatingOrderVC
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: false, completion: nil)
+    }
+    
+    
+
 }
 

@@ -2,7 +2,7 @@
 //  InviteFriendsVC.swift
 //  iCekici
 //
-//  Created by Nazik on 22.01.2021.
+//  Created by Wookweb Creative Agency on 22.01.2021.
 //
 
 import UIKit

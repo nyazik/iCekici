@@ -617,7 +617,7 @@
                                         </constraints>
                                         <state key="normal" image="ic_homeButton"/>
                                         <connections>
-                                            <action selector="incomingOrdersTabbarButtonPressed:" destination="uED-x1-3Dh" eventType="touchUpInside" id="bms-D3-DfF"/>
+                                            <action selector="createNewOrderTabbarButtonPressed:" destination="5zb-Ri-LeP" eventType="touchUpInside" id="tA8-HP-1hs"/>
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0Vl-iK-KHv">
@@ -1530,13 +1530,33 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DDM-S0-nGh">
                                 <rect key="frame" x="0.0" y="130" width="414" height="766"/>
                             </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_location_pin" translatesAutoresizingMaskIntoConstraints="NO" id="2lL-gB-zkz">
+                                <rect key="frame" x="183" y="424" width="48" height="48"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x0y-en-3ts">
+                                <rect key="frame" x="0.0" y="826" width="414" height="70"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="zCI-s9-OfV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="20" maxX="0.0" maxY="20"/>
+                                <state key="normal" title="Kaydet">
+                                    <color key="titleColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cwb-KD-sM3"/>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="2lL-gB-zkz" firstAttribute="centerX" secondItem="CX1-5W-HUp" secondAttribute="centerX" id="0jf-4I-V4X"/>
+                            <constraint firstItem="x0y-en-3ts" firstAttribute="leading" secondItem="cwb-KD-sM3" secondAttribute="leading" id="6LL-6v-Omv"/>
                             <constraint firstItem="cwb-KD-sM3" firstAttribute="trailing" secondItem="3Dj-TV-UWn" secondAttribute="trailing" id="AOa-xm-vDd"/>
                             <constraint firstItem="DDM-S0-nGh" firstAttribute="trailing" secondItem="cwb-KD-sM3" secondAttribute="trailing" id="F1X-ez-szp"/>
+                            <constraint firstItem="x0y-en-3ts" firstAttribute="bottom" secondItem="CX1-5W-HUp" secondAttribute="bottom" id="Sux-vq-HrS"/>
                             <constraint firstItem="3Dj-TV-UWn" firstAttribute="leading" secondItem="CX1-5W-HUp" secondAttribute="leading" id="UWL-aG-6Wo"/>
+                            <constraint firstItem="2lL-gB-zkz" firstAttribute="centerY" secondItem="CX1-5W-HUp" secondAttribute="centerY" id="YUL-UY-skh"/>
+                            <constraint firstItem="cwb-KD-sM3" firstAttribute="trailing" secondItem="x0y-en-3ts" secondAttribute="trailing" id="bdH-iB-T8j"/>
                             <constraint firstItem="3Dj-TV-UWn" firstAttribute="top" secondItem="CX1-5W-HUp" secondAttribute="top" id="f4v-iB-5Ks"/>
                             <constraint firstAttribute="bottom" secondItem="DDM-S0-nGh" secondAttribute="bottom" id="imw-pO-eZ1"/>
                             <constraint firstItem="DDM-S0-nGh" firstAttribute="leading" secondItem="cwb-KD-sM3" secondAttribute="leading" id="wKo-mF-S28"/>
@@ -2442,6 +2462,9 @@
                                             <constraint firstAttribute="height" constant="44" id="uez-we-yq2"/>
                                         </constraints>
                                         <state key="normal" image="ic_homeButton"/>
+                                        <connections>
+                                            <action selector="createNewOrderTabbarButtonPressed:" destination="sIW-BC-MZP" eventType="touchUpInside" id="cNv-T0-EFZ"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Reh-bP-bLn">
                                         <rect key="frame" x="20" y="20" width="145" height="40"/>
@@ -3903,19 +3926,19 @@ linkine tıkla.</string>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wook Web" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMf-dK-BWp">
-                                        <rect key="frame" x="20" y="219.33333333333334" width="374" height="20"/>
+                                        <rect key="frame" x="20" y="219.33333333333334" width="374" height="21"/>
                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zjC-5C-37L">
-                                        <rect key="frame" x="10" y="259.33333333333331" width="394" height="151"/>
+                                        <rect key="frame" x="10" y="260.33333333333331" width="394" height="155"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="SEb-Fy-Fd9">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BZX-zW-QJJ">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <state key="normal" title="Gelen Çekiciler">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3925,7 +3948,7 @@ linkine tıkla.</string>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8qS-1K-Atb">
-                                                        <rect key="frame" x="0.0" y="32" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="33" width="394" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="guf-BA-yP1"/>
@@ -3938,10 +3961,10 @@ linkine tıkla.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="HNn-Mm-5W9">
-                                                <rect key="frame" x="0.0" y="39" width="394" height="34"/>
+                                                <rect key="frame" x="0.0" y="40" width="394" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTg-eh-lSO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <state key="normal" title="Atanmış Çekiciler">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3951,7 +3974,7 @@ linkine tıkla.</string>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YSh-bK-iPl">
-                                                        <rect key="frame" x="0.0" y="32" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="33" width="394" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="Z9o-qm-KBg"/>
@@ -3964,10 +3987,10 @@ linkine tıkla.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="9AS-cz-cwn">
-                                                <rect key="frame" x="0.0" y="78" width="394" height="34"/>
+                                                <rect key="frame" x="0.0" y="80" width="394" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tht-Xd-Iaa">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <state key="normal" title="İptal Edilmiş Çekiciler">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -3977,7 +4000,7 @@ linkine tıkla.</string>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OBJ-N2-OT2">
-                                                        <rect key="frame" x="0.0" y="32" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="33" width="394" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="IGY-GX-BW5"/>
@@ -3990,10 +4013,10 @@ linkine tıkla.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="2E0-jE-VsR">
-                                                <rect key="frame" x="0.0" y="117" width="394" height="34"/>
+                                                <rect key="frame" x="0.0" y="120" width="394" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ab-6j-ABc">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <state key="normal" title="Cüzdanım">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4003,7 +4026,7 @@ linkine tıkla.</string>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8K-DH-l7X">
-                                                        <rect key="frame" x="0.0" y="32" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="33" width="394" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="4x6-wk-Nxw"/>
@@ -4018,13 +4041,13 @@ linkine tıkla.</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nbT-1w-YyN">
-                                        <rect key="frame" x="10" y="440.33333333333331" width="394" height="111.99999999999994"/>
+                                        <rect key="frame" x="10" y="445.33333333333331" width="394" height="114.99999999999994"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="E7d-MQ-Pnx">
-                                                <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdn-U6-u1C">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <state key="normal" title="Kampanyalar">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4034,7 +4057,7 @@ linkine tıkla.</string>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVP-Zn-1II">
-                                                        <rect key="frame" x="0.0" y="32" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="33" width="394" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="XPb-aO-lKE"/>
@@ -4047,10 +4070,10 @@ linkine tıkla.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="vhI-Pv-mwR">
-                                                <rect key="frame" x="0.0" y="39" width="394" height="34"/>
+                                                <rect key="frame" x="0.0" y="40" width="394" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKQ-00-O5M">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <state key="normal" title="Duyurular">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4060,7 +4083,7 @@ linkine tıkla.</string>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qv1-Sc-JrQ">
-                                                        <rect key="frame" x="0.0" y="32" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="33.000000000000057" width="394" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="jeQ-f6-8eg"/>
@@ -4073,10 +4096,10 @@ linkine tıkla.</string>
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="ePP-I8-TcJ">
-                                                <rect key="frame" x="0.0" y="78.000000000000057" width="394" height="34"/>
+                                                <rect key="frame" x="0.0" y="80.000000000000057" width="394" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVe-Nk-kCR">
-                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="32"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="394" height="33"/>
                                                         <fontDescription key="fontDescription" name="CenturyGothic" family="Century Gothic" pointSize="17"/>
                                                         <state key="normal" title="Markalar">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -4086,7 +4109,7 @@ linkine tıkla.</string>
                                                         </connections>
                                                     </button>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZHm-uW-aRA">
-                                                        <rect key="frame" x="0.0" y="32" width="394" height="2"/>
+                                                        <rect key="frame" x="0.0" y="33" width="394" height="2"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="2" id="iuK-jW-ARa"/>
@@ -7939,13 +7962,13 @@ linkine tıkla.</string>
                                                                         <rect key="frame" x="20" y="70" width="137" height="35"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOt-wx-hG3">
-                                                                                <rect key="frame" x="29.999999999999993" y="0.0" width="77.333333333333314" height="20.666666666666668"/>
+                                                                                <rect key="frame" x="29.999999999999993" y="0.0" width="77.333333333333314" height="20.333333333333332"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paylaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNF-iv-lXc">
-                                                                                <rect key="frame" x="50.333333333333314" y="20.666666666666686" width="36.333333333333343" height="14.333333333333336"/>
+                                                                                <rect key="frame" x="50.333333333333314" y="20.333333333333314" width="36.333333333333343" height="14.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -7982,13 +8005,13 @@ linkine tıkla.</string>
                                                                         <rect key="frame" x="20" y="70" width="137" height="35"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uiy-RD-Tkx">
-                                                                                <rect key="frame" x="29.999999999999993" y="0.0" width="77.333333333333314" height="20.333333333333332"/>
+                                                                                <rect key="frame" x="29.999999999999993" y="0.0" width="77.333333333333314" height="20.666666666666668"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paylaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOp-y2-ymY">
-                                                                                <rect key="frame" x="50.333333333333329" y="20.333333333333314" width="36.333333333333329" height="14.666666666666664"/>
+                                                                                <rect key="frame" x="50.333333333333329" y="20.666666666666686" width="36.333333333333329" height="14.333333333333336"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -8020,13 +8043,13 @@ linkine tıkla.</string>
                                                                         <rect key="frame" x="20" y="70" width="137" height="35"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvZ-m1-uiB">
-                                                                                <rect key="frame" x="29.999999999999993" y="0.0" width="77.333333333333314" height="20.666666666666668"/>
+                                                                                <rect key="frame" x="29.999999999999993" y="0.0" width="77.333333333333314" height="20.333333333333332"/>
                                                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paylaş" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xET-iI-y2i">
-                                                                                <rect key="frame" x="50.333333333333314" y="20.666666666666686" width="36.333333333333343" height="14.333333333333336"/>
+                                                                                <rect key="frame" x="50.333333333333314" y="20.333333333333314" width="36.333333333333343" height="14.666666666666664"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                                                                                 <nil key="highlightedColor"/>
@@ -8539,13 +8562,13 @@ yapacağınız siparişlerde
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Dw3-aW-QLZ">
                                                             <rect key="frame" x="49.999999999999986" y="26.999999999999996" width="174.66666666666663" height="50.666666666666657"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Wook Çekici Ödemesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLX-sv-pcK">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wook Çekici Ödemesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLX-sv-pcK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="174.66666666666666" height="20.333333333333332"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Sipariş No: 48484848 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HM-a3-1qW">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sipariş No: 48484848 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9HM-a3-1qW">
                                                                     <rect key="frame" x="0.0" y="30.333333333333336" width="174.66666666666666" height="20.333333333333336"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
@@ -9894,7 +9917,7 @@ Fırsatı Yakala!</string>
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="561"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRY-JA-cqS">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="568"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="619"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tlJ-H2-k9O">
                                                 <rect key="frame" x="10" y="10" width="394" height="358"/>
@@ -10274,6 +10297,25 @@ Fırsatı Yakala!</string>
                                                     <constraint firstItem="8eW-rk-CwS" firstAttribute="leading" secondItem="c3k-63-Nzf" secondAttribute="leading" constant="5" id="yve-t4-Epx"/>
                                                 </constraints>
                                             </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GhR-ty-2hi">
+                                                <rect key="frame" x="272.33333333333331" y="559" width="121.66666666666669" height="30"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sipariş Oluştur" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PfZ-CO-WuT">
+                                                        <rect key="frame" x="5" y="5" width="111.66666666666667" height="20"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.29803921570000003" green="0.77647058820000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="3JX-f6-R6c"/>
+                                                    <constraint firstItem="PfZ-CO-WuT" firstAttribute="leading" secondItem="GhR-ty-2hi" secondAttribute="leading" constant="5" id="9dM-sb-Rm2"/>
+                                                    <constraint firstAttribute="trailing" secondItem="PfZ-CO-WuT" secondAttribute="trailing" constant="5" id="A78-QX-7BW"/>
+                                                    <constraint firstItem="PfZ-CO-WuT" firstAttribute="top" secondItem="GhR-ty-2hi" secondAttribute="top" constant="5" id="YeJ-kv-n1H"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PfZ-CO-WuT" secondAttribute="bottom" constant="5" id="bka-uk-q83"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -10285,7 +10327,9 @@ Fırsatı Yakala!</string>
                                             <constraint firstItem="tlJ-H2-k9O" firstAttribute="top" secondItem="BRY-JA-cqS" secondAttribute="top" constant="10" id="NNW-8j-BfZ"/>
                                             <constraint firstItem="c3k-63-Nzf" firstAttribute="top" secondItem="nfs-Fm-n70" secondAttribute="bottom" constant="10" id="O4P-YP-g5T"/>
                                             <constraint firstItem="FYN-Rg-bzX" firstAttribute="top" secondItem="tlJ-H2-k9O" secondAttribute="bottom" constant="20" id="PIf-Ta-3wd"/>
+                                            <constraint firstAttribute="trailing" secondItem="GhR-ty-2hi" secondAttribute="trailing" constant="20" id="PWH-BK-K2M"/>
                                             <constraint firstAttribute="trailing" secondItem="nfs-Fm-n70" secondAttribute="trailing" constant="10" id="PlH-yC-kUC"/>
+                                            <constraint firstItem="GhR-ty-2hi" firstAttribute="top" secondItem="c3k-63-Nzf" secondAttribute="bottom" constant="30" id="VSq-XH-uqT"/>
                                             <constraint firstItem="06C-PO-zyZ" firstAttribute="leading" secondItem="BRY-JA-cqS" secondAttribute="leading" constant="10" id="VaD-g8-3yP"/>
                                             <constraint firstItem="nfs-Fm-n70" firstAttribute="leading" secondItem="BRY-JA-cqS" secondAttribute="leading" constant="10" id="XJY-3h-A9J"/>
                                             <constraint firstItem="8rm-7I-9Hz" firstAttribute="leading" secondItem="06C-PO-zyZ" secondAttribute="trailing" constant="20" id="Xgq-37-Ewe"/>
@@ -10298,9 +10342,9 @@ Fırsatı Yakala!</string>
                                             <constraint firstItem="nfs-Fm-n70" firstAttribute="top" secondItem="FYN-Rg-bzX" secondAttribute="bottom" constant="10" id="q6l-WB-Qyt"/>
                                             <constraint firstAttribute="trailing" secondItem="c3k-63-Nzf" secondAttribute="trailing" constant="20" id="qUu-kb-gor"/>
                                             <constraint firstItem="tlJ-H2-k9O" firstAttribute="leading" secondItem="BRY-JA-cqS" secondAttribute="leading" constant="10" id="qdy-oN-4NE"/>
+                                            <constraint firstAttribute="bottom" secondItem="GhR-ty-2hi" secondAttribute="bottom" constant="30" id="use-ov-GYI"/>
                                             <constraint firstItem="tEj-1R-kNw" firstAttribute="leading" secondItem="TcE-Mp-Ypk" secondAttribute="trailing" constant="20" id="wog-JE-Y9a"/>
                                             <constraint firstItem="1cq-8a-1Gz" firstAttribute="top" secondItem="8rm-7I-9Hz" secondAttribute="bottom" constant="10" id="yCa-Vr-5BV"/>
-                                            <constraint firstAttribute="bottom" secondItem="tlJ-H2-k9O" secondAttribute="bottom" constant="200" id="zjI-Bz-ieH"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -10326,6 +10370,7 @@ Fırsatı Yakala!</string>
                     <connections>
                         <outlet property="destinationLocationDropDown" destination="Q52-q8-sLu" id="fTI-F9-8FQ"/>
                         <outlet property="destinationLocationRondView" destination="c3k-63-Nzf" id="74w-06-4ry"/>
+                        <outlet property="makeOrderView" destination="GhR-ty-2hi" id="zxf-tj-tZF"/>
                         <outlet property="roundView" destination="FYN-Rg-bzX" id="aYt-i4-CG9"/>
                         <outlet property="startLocationDropDown" destination="1cq-8a-1Gz" id="Dyq-KQ-god"/>
                         <outlet property="towBrandView" destination="aoD-gI-QCQ" id="08x-1z-fB6"/>
@@ -11076,6 +11121,7 @@ Fırsatı Yakala!</string>
         <image name="ic_towExample-1" width="84" height="47"/>
         <image name="ic_unselectedHome" width="19.333333969116211" height="23"/>
         <image name="iconAwesomeStar" width="13.666666984558105" height="13"/>
+        <image name="img_location_pin" width="48" height="48"/>
         <image name="menu" width="29" height="29"/>
         <image name="mercedesBenzLogo" width="83" height="83"/>
         <image name="notification" width="20.666666030883789" height="22.333333969116211"/>
@@ -11109,8 +11155,14 @@ Fırsatı Yakala!</string>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

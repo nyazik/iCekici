@@ -2,7 +2,7 @@
 //  CampaignListingVC.swift
 //  iCekici
 //
-//  Created by Nazik on 23.01.2021.
+//  Created by Wookweb Creative Agency on 23.01.2021.
 //
 
 import UIKit

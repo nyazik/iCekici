@@ -2,7 +2,7 @@
 //  AddMultiplePhotoVC.swift
 //  iCekici
 //
-//  Created by Nazik on 25.01.2021.
+//  Created by Wookweb Creative Agency on 25.01.2021.
 //
 
 import UIKit
